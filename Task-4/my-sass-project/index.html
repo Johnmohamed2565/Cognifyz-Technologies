@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PORTFOLIO WEB</title>
+  <link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+  <header class="header">
+    <div class="container">
+      <div class="header__logo">
+        <h1>PORTFOLIO WEB USING CSS PREPROCESSING (SAAS)</h1>
+      </div>
+      <nav class="nav">
+        <ul class="nav__list">
+          <li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
+          <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
+          <li class="nav__item"><a href="#portfolio" class="nav__link">Portfolio</a></li>
+          <li class="nav__item"><a href="#testimonials" class="nav__link">Testimonials</a></li>
+          <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="main">
+   
+    <section id="home" class="hero">
+      <div class="container">
+        <h1 class="hero__title">Welcome to My World</h1>
+        <p class="hero__subtitle">I'm a Web Developer, Designer, and Creator. Welcome to the gateway of my portfolio! Here, you’ll find a snapshot of who I am and what I bring to the table. This section sets the tone for everything that lies ahead—a vibrant journey through my professional and creative endeavors. The Home section is designed to inspire, captivate, and invite you to explore further. Whether you’re here to learn more about my work, discover the services I offer, or simply to connect, you’re in the right place. Dive in and let’s start this exciting journey together</p>
+        <a href="#portfolio" class="button button--primary">View My Work</a>
+      </div>
+    </section>
+
+   
+    <section id="about" class="about">
+      <div class="container">
+        <h2 class="section-title">About Me</h2>
+        <p class="about__text">
+          I am a passionate web developer with expertise in creating modern, responsive, and user-friendly websites. With a focus on performance and design, I bring ideas to life using the latest technologies. The About section gives you an in-depth look at my story, background, and the expertise that drives my work. I am a passionate individual dedicated to creating impactful digital experiences, blending creativity with technical skills to deliver projects that truly stand out. Here, you’ll discover the path that brought me to where I am today, from my educational journey to the key milestones in my career. It’s not just about the work I do; it’s about the purpose behind it—helping brands, businesses, and individuals achieve their goals through innovative and effective solutions. Get to know the person behind the work and what fuels my passion for excellence.
+        </p>
+      </div>
+    </section>
+
+    
+    <section id="portfolio" class="portfolio">
+      <div class="container">
+        <h2 class="section-title">My Projects</h2>
+        <div class="portfolio__grid">
+          <article class="portfolio__item">
+            <img src="/Task-4/my-sass-project/project1.jpeg" alt="Project 1" class="portfolio__image">
+            <h3 class="portfolio__title">Project One</h3>
+            <p class="portfolio__description">A stunning e-commerce website built with React and Sass.</p>
+          </article>
+          <article class="portfolio__item">
+            <img src="/Task-4/my-sass-project/project2.jpeg" alt="Project 2" class="portfolio__image">
+            <h3 class="portfolio__title">Project Two</h3>
+            <p class="portfolio__description">A personal blog built with Next.js and styled with SCSS modules.</p>
+          </article>
+          <article class="portfolio__item">
+            <img src="/Task-4/my-sass-project/project3.jpeg" alt="Project 3" class="portfolio__image">
+            <h3 class="portfolio__title">Project Three</h3>
+            <p class="portfolio__description">A portfolio website showcasing animations using GSAP and Sass.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    
+    <section id="testimonials" class="testimonials">
+      <div class="container">
+        <h2 class="section-title">What People Say</h2>
+        <div class="testimonials__carousel">
+          <blockquote class="testimonial">
+        
+
+                <p>"An exceptional developer who delivered beyond expectations!"</p>
+                <cite>- Client A</cite>
+            </blockquote>
+            <blockquote class="testimonial">
+                <p>"Creative and technically sound. Highly recommended."</p>
+                <cite>- Client B</cite>
+            </blockquote>
+            <blockquote class="testimonial">
+                <p>"A true professional with great communication skills."</p>
+                <cite>- Client C</cite>
+            </blockquote>
+        
+        </div>
+      </div>
+    </section>
+
+ 
+    <section id="contact" class="contact">
+      <div class="container">
+        <h2 class="section-title">Get in Touch</h2>
+        <form action="#" class="contact__form">
+            <center>
+
+                <div>
+                    
+                    <input type="text" name="name" placeholder="Your Name" class="contact__input">
+                </div>
+                <div>
+                    
+                    <input type="email" name="email" placeholder="Your Email" class="contact__input">
+                </div>
+                <div>
+                    <textarea name="message" rows="5" placeholder="Your Message" class="contact__textarea"></textarea>
+                    
+                </div>
+                <div>
+                    
+                    <button type="submit" class="button button--primary">Send Message</button>
+                </div>
+            </center>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2024 My Portfolio. All Rights Reserved.</p>
+    </div>
+  </footer>
+</body>
+</html>

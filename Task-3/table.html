@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Submitted Form Data</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Submitted Data</h1>
+  </header>
+
+  <main>
+    <table id="dataTable" border="1">
+      <thead>
+        <tr>
+          <th>Full Name</th>
+          <th>Email</th>
+          <th>Message</th>
+        </tr>
+      </thead>
+      <tbody>
+       
+      </tbody>
+    </table>
+  </main>
+
+  <footer>
+    <p>© 2024 Web Development Solutions. All Rights Reserved.</p>
+  </footer>
+
+  <script>
+   
+    const submissions = JSON.parse(localStorage.getItem('formSubmissions')) || [];
+    const tableBody = document.querySelector('#dataTable tbody');
+
+    submissions.forEach(submission => {
+      const row = document.createElement('tr');
+      row.innerHTML = `
+        <td>${submission.name}</td>
+        <td>${submission.email}</td>
+        <td>${submission.message}</td>
+      `;
+      tableBody.appendChild(row);
+    });
+  </script>
+</body>
+</html>

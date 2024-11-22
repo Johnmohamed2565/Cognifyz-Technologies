@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>INTERACTIVE BUTTON WEB</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+        header {
+            background-color: #00eaf2;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 36px;
+        }
+        nav {
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: purple;
+            font-size: 18px;
+        }
+        nav a:hover {
+            color: #FF5733;
+        }
+        section {
+            margin: 20px;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        section h2 {
+            color: #1313d0;
+            margin-top: 0;
+        }
+
+        
+        button {
+            background-color: #000000;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 18px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            margin-top: 20px;
+        }
+        footer a {
+            color: #4CAF50;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            color: #FFD700;
+        }
+    </style>
+</head>
+<body>
+   
+    <header>
+        <h1>INTERACTIVE BUTTON WEBPAGE</h1>
+    </header>
+
+    <nav>
+        <a href="#about">About</a>
+        <a href="#features">Features</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    
+    <main>
+       
+        <section id="about">
+            <h2>About This Page</h2>
+            <p>This page demonstrates how to use various HTML tags with inline CSS and JavaScript functionality to create an interactive experience. It includes headers, sections, buttons, and links for navigation.Welcome to our interactive web page! This project demonstrates the use of HTML, CSS, and JavaScript to create a dynamic and engaging user experience. By clicking the buttons below, you can explore various features and functionalities that enhance the interactivity of the web page.</p>
+        </section>
+
+        
+        <section id="features">
+            <h2>Interactive Features</h2>
+            <p>Our interactive web page includes several features designed to showcase the power of modern web development techniques. You can change the background color, display hidden content, and even trigger animations with a simple click. These features are implemented using inline CSS for styling and JavaScript for functionality. Click the button below to change the background color of the page!</p>
+           <center>
+               <button id="colorButton">Change Background Color</button>
+
+           </center>
+        </section>
+
+        
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <p>If you have any questions, feel free to reach out:</p>
+            <a href="mailto:info@example.com" style="color: #FF5733;">Email Us</a>
+        </section>
+    </main>
+
+   
+    <footer>
+        <p>&copy; 2024 Interactive Webpage Example</p>
+        <p>
+            <a href="https://example.com" target="_blank">Visit Our Website</a>
+        </p>
+    </footer>
+
+    <script>
+        
+        const button = document.getElementById('colorButton');
+        const colors = ['#FF5733', '#33FF57', '#5733FF', '#FFD700', '#4CAF50', '#FF69B4'];
+        let colorIndex = 0;
+        button.addEventListener('click', function () {
+            document.body.style.backgroundColor = colors[colorIndex];
+            colorIndex = (colorIndex + 1) % colors.length;
+        });
+    </script>
+</body>
+</html>

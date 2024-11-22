@@ -1,0 +1,126 @@
+$primary-color: #4caf50;
+$secondary-color: #ff5722;
+$bg-color: #f9f9f9;
+$text-color: #333;
+$font-stack: 'Arial, sans-serif';
+$max-width: 1200px;
+@mixin container {
+    max-width: $max-width;
+    margin: 0 auto;
+    padding: 0 15px;
+  }
+  
+  @mixin flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  @mixin responsive($breakpoint) {
+    @media (max-width: $breakpoint) {
+      @content;
+    }
+  }
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: $font-stack;
+    background-color: $bg-color;
+    color: $text-color;
+    line-height: 1.6;
+  }
+  
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  .section-title {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    color: $primary-color;
+  }
+  .header {
+    background: $primary-color;
+    padding: 1rem 0;
+  
+    .container {
+      @include container;
+      @include flex-center;
+  
+      .header__logo h1 {
+        color: #fff;
+      }
+    }
+  
+    .nav__list {
+      display: flex;
+      gap: 1.5rem;
+      list-style: none;
+  
+      .nav__link {
+        color: #fff;
+  
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+  .hero {
+    text-align: center;
+    padding: 5rem 1rem;
+    background: linear-gradient(to right, $primary-color, $secondary-color);
+  
+    .hero__title {
+      font-size: 3rem;
+      color: #fff;
+    }
+  
+    .hero__subtitle {
+      color: #f9f9f9;
+      margin: 1rem 0;
+    }
+  }
+  .portfolio {
+    background: #fff;
+    padding: 3rem 1rem;
+  
+    .portfolio__grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 2rem;
+  
+      @include responsive(768px) {
+        grid-template-columns: 1fr;
+      }
+  
+      .portfolio__item {
+        background: $bg-color;
+        padding: 1rem;
+        border-radius: 5px;
+        text-align: center;
+  
+        .portfolio__image {
+          max-width: 100%;
+          border-radius: 5px;
+        }
+      }
+    }
+  }
+  .footer {
+    background: $secondary-color;
+    color: #fff;
+    padding: 1.5rem 0;
+    text-align: center;
+  
+    p {
+      margin: 0;
+    }
+  }
+            
