@@ -99,12 +99,12 @@ Welcome to my frontend development repository! This project showcases the skills
 
 1. **Clone this repository**:
     ```bash
-    git clone https://github.com/yourusername/your-repository-name.git
+    git clone [https://github.com/yourusername/your-repository-name](https://github.com/Johnmohamed2565/Cognifyz-Technologies).git
     ```
 
 2. **Navigate to the project directory**:
     ```bash
-    cd your-repository-name
+    cd Cognifyz-Technologies
     ```
 
 3. **Open the HTML file**:
@@ -137,9 +137,9 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 For any inquiries or feedback, you can reach me at:
 
-- **Email**: your-email@example.com
-- **Website**: [your-portfolio.com](https://your-portfolio.com)
+- **Email**: johnmohamed0002@gmail.com
+- **Website**: [your-portfolio.com](#)
 
 ---
 
-Thank you for visiting my portfolio! I hope you enjoy exploring the tasks and projects I've completed during my frontend development journey at Cogniftz Technologies.
+Thank you for visiting my project! I hope you enjoy exploring the tasks and projects I've completed during my frontend development journey at Cogniftz Technologies.
